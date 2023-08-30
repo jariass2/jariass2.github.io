@@ -102,7 +102,17 @@ Driven by a sense of urgency and attention to detail.</div>
 </div>
 
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/1b2cb06e-04b4-4098-8c46-5238b214431e/webchat/config.js" defer></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "1b2cb06e-04b4-4098-8c46-5238b214431e",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "1b2cb06e-04b4-4098-8c46-5238b214431e",
+      "lazySocket": true
+  });
+</script>
 
 </body>
 </html>
